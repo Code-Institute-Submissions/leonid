@@ -19,6 +19,9 @@ ol, ul {
   --leo-blue: #348ba2;
   --leo-gold: #707118;
 	--offwhite: #efe5e5;
+	--disc-green: #64c451;
+	--disc-yellow:#e2e47b;
+	--disc-red:#f54242;
 }
 
 
@@ -148,6 +151,71 @@ blockquote footer {
   width: 132px;
 }
 
+hr.green{
+	border-top: 5px solid var(--disc-green);
+	width: 35%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+/* Discography */
+
+.thumbnail {
+    margin-bottom: 10px;
+    background-color: var(--disc-yellow);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+a.thumbnail:hover, a.thumbnail:active {
+    border-color: #7dc3c3;
+}
+
+.discog {
+	margin-top: 100px;
+}
+
+.disc {
+	font-size: 50px;
+	margin-bottom: 40px;
+	color: var(--disc-red);
+}
+
+.release {/*
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+}
+
+
+
+
+.crow {
+	/*display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
+		margin-bottom: 20px;
+}
+
+.release img{
+	width: 700px;
+	height: auto;
+}
+
+.tracklist {
+	background-color: #f5f4d1;
+}
 
 
 
@@ -165,5 +233,23 @@ blockquote footer {
 }
 	.navbar {
 	  position: relative;
+	}
+
+	.crow {
+
+	}
+
+
+
+	.release {
+		width: 370px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+@media(min-width: 1200px){
+	.four {
+		min-height: 180px;
 	}
 }
