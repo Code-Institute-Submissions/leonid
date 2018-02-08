@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Asap:400,400i" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -32,9 +33,9 @@
 
         <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#releases">Releases</a></li>
-            <li><a href="#flyers">Flyers</a></li>
+            <li><a href="#gear">Gear</a></li>
             <li><a href="#tracks">Tracks</a></li>
             <li><a href="#video">Video</a></li>
           </ul>
@@ -60,7 +61,7 @@
 
   <div class="container">
     <!-- Example row of columns -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="row">
         <div class="col-md-4">
           <h2 class="text-center">Background</h2>
@@ -88,7 +89,7 @@
 
     <hr class="green">
 
-    <section class="discog-section">
+    <section class="discog-section" id="releases">
       <h2 class="text-center discog">Discography</h2>
       <p class="text-center disc"><span class="glyphicon glyphicon-cd "></span></p>
       <div class="row release">
@@ -177,11 +178,43 @@
             <p>B2. Jose Rico Saturn Hit</p>
           </div>
         </div>
+      </div><!-- End Row -->
+    </section><!-- End Discog Section -->
 
-      </div><!--End Row 1 -->
-      <div class="row release">
+    <section class="gear-section" id="gear">
+      <h2 class="text-center">Production Tools</h2>
+      <hr class="blue">
+      <div class="img-container">
+        <div class="main-img">
+          <img src="../assets/img/synth/img1.jpg" alt="synth" id="current">
+        </div>
+        <h3>Test</h3>
+        <div class="imgs crosshair">
+          <img src="../assets/img/synth/img1.jpg">
+          <img src="../assets/img/synth/img2.jpg">
+          <img src="../assets/img/synth/img3.jpg">
+          <img src="../assets/img/synth/img4.jpg">
+          <img src="../assets/img/synth/img5.jpg">
+          <img src="../assets/img/synth/img6.jpg">
+          <img src="../assets/img/synth/img7.jpg">
+          <img src="../assets/img/synth/img8.jpg">
+        </div>
+      </div>
+    </section>
 
-      </div><!--End Row 2 -->
+    <section class="tracks-section" id="tracks">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="audio-player">
+            <button class="play"><i class="ion-play"></i></button>
+            <div class="seek-bar">
+              <div class="fill"></div>
+              <div class="handle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <footer>
@@ -196,13 +229,15 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="main.js"></script>
+  <script src="music-player.js"></script>
 </body>
 
 </html>

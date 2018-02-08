@@ -20,13 +20,13 @@ ol, ul {
   --leo-gold: #707118;
 	--offwhite: #efe5e5;
 	--disc-green: #64c451;
-	--disc-yellow:#e2e47b;
-	--disc-red:#f54242;
+	--disc-yellow: #e2e47b;
+	--disc-red :#f54242;
+	--gear-grey: #b5b0af;
+	--tracks-grey: #464343;
 }
 
-
 /* Navbar */
-
 .nav{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
@@ -192,9 +192,6 @@ a.thumbnail:hover, a.thumbnail:active {
     flex-wrap: wrap;*/
 }
 
-
-
-
 .crow {
 	/*display: -webkit-box;
     display: -webkit-flex;
@@ -217,6 +214,116 @@ a.thumbnail:hover, a.thumbnail:active {
 	background-color: #f5f4d1;
 }
 
+/* GEAR SECTION*/
+
+.gear-section h2 {
+	margin: 60px 0 10px;
+}
+
+hr.blue{
+	border-top: 5px solid var(--leo-blue);
+	width: 25%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.img-container{
+	max-width: 700px;
+	margin: auto;
+	background: var(--gear-grey);
+}
+
+.gear-section h3 {
+	color: white;
+	font-size: 50px;
+	background-color: white;
+	margin: 0;
+}
+
+.imgs {
+	/*margin-top: 30px;*/
+}
+
+.main-img img,
+.imgs img {
+	width: 100%;
+}
+
+.imgs {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2px;
+	cursor: crosshair;
+}
+
+/* fade in animation*/
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+/* TRACKS SECTION*/
+
+.tracks-section {
+	background: var(--tracks-grey);
+}
+
+/* Player*/
+
+:root {
+  background-color: #222;
+}
+.audio-player {
+  display: flex;
+  align-items: center;
+}
+.audio-player button.play {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  background-color: #0af;
+  color: white;
+  font-size: 30px;
+  border-radius: 100000px;
+  cursor: pointer;
+}
+.audio-player .seek-bar {
+  margin: 30px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 100000px;
+  cursor: pointer;
+}
+.audio-player .seek-bar .fill {
+  height: 10px;
+  background-color: #0af;
+  border-radius: 100000px;
+}
+.audio-player .seek-bar .handle {
+  width: 10px;
+  height: 10px;
+  background-color: #0af;
+  border-radius: 100000px;
+  margin-left: -5px;
+  transform: scale(2);
+  transition: all 0.1s;
+}
+.audio-player .seek-bar .handle:hover {
+  background-color: #3bf;
+  transform: scale(3);
+}
+
+
+
 
 
 
@@ -234,13 +341,6 @@ a.thumbnail:hover, a.thumbnail:active {
 	.navbar {
 	  position: relative;
 	}
-
-	.crow {
-
-	}
-
-
-
 	.release {
 		width: 370px;
 		height: auto;
