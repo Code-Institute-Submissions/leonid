@@ -82,7 +82,7 @@ ol, ul {
 
 .banner-section {
   height: 100vh;
-  background: url('../assets/img/paul_bh.jpg') no-repeat center center fixed;
+  background: url('assets/img/paul_bh.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -186,7 +186,7 @@ a.thumbnail:hover, a.thumbnail:active {
 }
 
 .release img{
-	width: 700px;
+	width: 500px;
 	height: auto;
 }
 
@@ -566,7 +566,7 @@ a.socialIcon:hover, .socialHoverClass {
 	  position: relative;
 	}
 	.release {
-		width: 370px;
+		width: 300px;
 		height: auto;
 		margin: 0 auto;
 	}
@@ -595,6 +595,42 @@ a.socialIcon:hover, .socialHoverClass {
 	}
 	.social-circle li i {
 		line-height:50px;
+	}
+}
+
+@media(max-width: 380px) {
+	a.thumbnail{
+		width: 300px;
+	}
+
+	div.text-center.tracklist {
+		min-width: 300px;
+		max-width: 300px;
+	}
+
+	div.row.release {
+
+	}
+
+	#contactForm {
+	  max-width: 300px;
+	  margin: 50px auto 100px auto;
+	}
+
+	input {
+	  max-width: 300px;
+	}
+
+	textarea {
+	  max-width: 300px;
+	}
+
+	#submit {
+	  max-width: 300px;
+	}
+
+	.tracks-section p {
+		font-size: 13px;
 	}
 }
 
