@@ -82,17 +82,35 @@ ol, ul {
 
 .banner-section {
   height: 100vh;
-  background: url('../assets/img/paul_bh.jpg') no-repeat center center fixed;
+  background: url('../assets/img/paul_bh.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: flex;
+	display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   color: var(--leo-blue);
 }
+
+/*
+.banner-section {
+	display: table;
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	background-image: url('../assets/img/paul_bh.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: var(--leo-blue);
+}*/
 
 .banner-section .jumbotron {
   background-color: transparent;
@@ -595,6 +613,15 @@ a.socialIcon:hover, .socialHoverClass {
 	}
 	.social-circle li i {
 		line-height:50px;
+	}
+
+	.tracks-section {
+	  background: url('../assets/img/spinning_s.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  position: relative; 
 	}
 }
 
