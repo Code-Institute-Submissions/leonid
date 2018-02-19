@@ -90,19 +90,19 @@ ol, ul {
 /* Banner */
 
 .banner-section {
-  /*height: 100vh;*/
-	height: 700px;
+  height: 100vh;
   background: url('../assets/img/paul_bh.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	background-position: center;
 	display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   color: var(--leo-blue);
-
+	z-index: -1;
 }
 
 /*
@@ -790,6 +790,22 @@ a.socialIcon:hover, .socialHoverClass {
 	  padding: 10px 20px;
 	  margin: 0 0 20px;
 		max-width: 500px;
+	}
+
+	.banner-section {
+	  height: 100vh;
+	  background: url('../assets/img/paul_sm.png') no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+		background-position: center;
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  position: relative;
+	  color: var(--leo-blue);
+		z-index: -1;
 	}
 }
 
