@@ -48,10 +48,11 @@ function submitForm(e){
   //get values
   var name = getInputVal('name');
   var email = getInputVal('email');
+  var phone = getInputVal('phone');
   var message = getInputVal('message');
 
   // save message
-  saveMessage(name, email, message);
+  saveMessage(name, email, phone, message);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -71,11 +72,12 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, email, message){
+function saveMessage(name, email, phone, message){
   var newMessagesRef = messagesRef.push();
   newMessagesRef.set({
     name: name,
     email: email,
+    phone: phone,
     message: message
   });
 }

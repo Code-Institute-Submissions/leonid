@@ -74,6 +74,15 @@ ol, ul {
   background-color: var(--offwhite);
 }
 
+.navbar-default .navbar-right > li > a:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-right > li > a {
+	margin-top: -15px;
+}
+
+
 .navbar-default .navbar-collapse {
   border: 0;
 }
@@ -81,7 +90,8 @@ ol, ul {
 /* Banner */
 
 .banner-section {
-  height: 100vh;
+  /*height: 100vh;*/
+	height: 700px;
   background: url('../assets/img/paul_bh.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -92,6 +102,7 @@ ol, ul {
   justify-content: center;
   position: relative;
   color: var(--leo-blue);
+
 }
 
 /*
@@ -128,6 +139,7 @@ blockquote {
   font-size: 17.5px;
   border-left: 2px solid var(--leo-gold);
   color: var(--leo-gold);
+	max-width: 700px;
 }
 
 blockquote footer {
@@ -378,6 +390,11 @@ a:hover,a:focus{
 	color: var(--leo-blue);
 }
 
+.podcast-section {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
 li.pod {
 	margin-top: 5%;
 }
@@ -571,6 +588,7 @@ textarea:hover {
 	text-align: center;
 	padding: 10px;
 	background: var(--disc-green);
+	width: inherit;
 	display: none;
 }
 
@@ -599,25 +617,7 @@ ul.social-network li {
 
 
 /* footer social icons */
-/*
-.social-network a.icoRss:hover {
-	background-color: #F56505;
-}
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
-}
-.social-network a.icoTwitter:hover {
-	background-color:#33ccff;
-}
-.social-network a.icoGoogle:hover {
-	background-color:#BD3518;
-}
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
-}
-.social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
-}*/
+
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
@@ -678,6 +678,13 @@ a.socialIcon:hover, .socialHoverClass {
 	.navbar {
 	  position: relative;
 	}
+
+	blockquote {
+	  padding: 10px 20px;
+	  margin: 0 0 20px;
+		max-width: 500px;
+	}
+
 	.release {
 		width: 300px;
 		height: auto;
@@ -730,9 +737,6 @@ a.socialIcon:hover, .socialHoverClass {
 		max-width: 300px;
 	}
 
-	div.row.release {
-
-	}
 
 	#contactForm {
 	  max-width: 300px;
@@ -774,3 +778,39 @@ a.socialIcon:hover, .socialHoverClass {
 		min-height: 180px;
 	}
 }
+
+@media(max-width: 1100px){
+	.navbar-default .navbar-right {
+		display: none;
+	}
+}
+
+@media(max-width: 991px) {
+	blockquote {
+	  padding: 10px 20px;
+	  margin: 0 0 20px;
+		max-width: 500px;
+	}
+}
+
+@media(min-width: 991px) {
+	blockquote {
+	  padding: 10px 20px;
+	  margin: 0 0 20px;
+		max-width: 700px;
+	}
+}
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }

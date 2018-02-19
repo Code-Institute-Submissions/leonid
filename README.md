@@ -6,35 +6,13 @@ A Website to showcase Producer and DJ Leonid
 
 This is a project to showcase the career of producer/dj Leonid giving information about record releases as well as audio and video samples of his work.  There is also a contact form for bookings and getting in contact.
 
-## Getting Started
 
 ### Dependencies
 
-* HTML5, CSS3, CSS Grid, Bootstrap 3, Javascript
+* HTML5, CSS3, CSS Grid, Bootstrap 3, Javascript, Firebase
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
-
-Contributors names and contact info
 
 Alan Smith (solanus@gmail.com)
 
@@ -46,9 +24,10 @@ Alan Smith (solanus@gmail.com)
 
 ## License
 
-This project is licensed under the [Leonid] License
+MIT
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* Brad Traversy
+
+* Traversy Media (Tutorials on Contact form and CSS Grid Images)
+https://www.youtube.com/user/TechGuyWeb
