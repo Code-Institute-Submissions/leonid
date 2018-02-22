@@ -16,6 +16,15 @@ This is a project to showcase the career of producer/dj Leonid giving informatio
 
 Alan Smith (solanus@gmail.com)
 
+## Deployed
+
+Github pages
+https://github.com/alsmith808/leonid
+https://alsmith808.github.io/leonid/
+
+## Testing
+Tested on a range of different devices and screen sizes.
+
 
 ## Version History
 
