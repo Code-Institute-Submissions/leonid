@@ -102,7 +102,6 @@ ol, ul {
   justify-content: center;
   position: relative;
   color: var(--leo-blue);
-	z-index: -1;
 }
 
 /*
@@ -278,7 +277,7 @@ hr.blue{
 
 .tracks-section {
   /*height: 100vh;*/
-  background: url('../assets/img/spinning.jpg') no-repeat center center fixed;
+  background: url('../assets/img/spin.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -717,14 +716,7 @@ a.socialIcon:hover, .socialHoverClass {
 		line-height:50px;
 	}
 
-	.tracks-section {
-	  background: url('../assets/img/spinning_s.jpg') no-repeat center center fixed;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  position: relative;
-	}
+	
 }
 
 @media(max-width: 380px) {
@@ -805,7 +797,6 @@ a.socialIcon:hover, .socialHoverClass {
 	  justify-content: center;
 	  position: relative;
 	  color: var(--leo-blue);
-		z-index: -1;
 	}
 }
 
